@@ -1,0 +1,31 @@
+# 
+%WER 68.16 [ 18595 / 27280, 2902 ins, 1419 del, 14274 sub ] exp/tri3/decode_pilot_test_merge_bgpr/cer_20_1.0
+%WER 51.45 [ 14036 / 27280, 1029 ins, 938 del, 12069 sub ] exp/tri3/decode_pilot_test_merge_bgpr.si/cer_16_1.0
+%WER 66.79 [ 18220 / 27280, 2716 ins, 1561 del, 13943 sub ] exp/tri3/decode_pilot_test_merge_tgpr/cer_23_1.0
+%WER 50.63 [ 13811 / 27280, 959 ins, 988 del, 11864 sub ] exp/tri3/decode_pilot_test_merge_tgpr.si/cer_16_1.0
+%WER 74.56 [ 24664 / 33078, 2713 ins, 8558 del, 13393 sub ] exp/tri3/decode_pts_cv_merge_bgpr/cer_13_1.0
+%WER 75.37 [ 24932 / 33078, 2692 ins, 8584 del, 13656 sub ] exp/tri3/decode_pts_cv_merge_bgpr.si/cer_13_1.0
+%WER 74.94 [ 24789 / 33078, 2832 ins, 8167 del, 13790 sub ] exp/tri3/decode_pts_cv_merge_tgpr/cer_12_1.0
+%WER 75.29 [ 24906 / 33078, 2622 ins, 8821 del, 13463 sub ] exp/tri3/decode_pts_cv_merge_tgpr.si/cer_14_0.5
+%WER 53.59 [ 14618 / 27280, 2591 ins, 638 del, 11389 sub ] exp/tri4/decode_pilot_test_merge_bgpr/cer_17_1.0
+%WER 51.34 [ 14006 / 27280, 2629 ins, 599 del, 10778 sub ] exp/tri4/decode_pilot_test_merge_bgpr_re/cer_16_1.0
+%WER 55.26 [ 15076 / 27280, 2180 ins, 745 del, 12151 sub ] exp/tri4/decode_pilot_test_merge_bgpr_re.si/cer_16_1.0
+%WER 57.09 [ 15575 / 27280, 2047 ins, 841 del, 12687 sub ] exp/tri4/decode_pilot_test_merge_bgpr.si/cer_18_1.0
+%WER 51.94 [ 14168 / 27280, 2508 ins, 666 del, 10994 sub ] exp/tri4/decode_pilot_test_merge_tgpr/cer_19_1.0
+%WER 49.97 [ 13633 / 27280, 2642 ins, 524 del, 10467 sub ] exp/tri4/decode_pilot_test_merge_tgpr_re/cer_15_1.0
+%WER 54.22 [ 14792 / 27280, 2210 ins, 752 del, 11830 sub ] exp/tri4/decode_pilot_test_merge_tgpr_re.si/cer_16_1.0
+%WER 55.86 [ 15239 / 27280, 2010 ins, 834 del, 12395 sub ] exp/tri4/decode_pilot_test_merge_tgpr.si/cer_19_1.0
+%WER 72.03 [ 23826 / 33078, 3434 ins, 7898 del, 12494 sub ] exp/tri4/decode_pts_cv_merge_bgpr/cer_12_1.0
+%WER 70.99 [ 23481 / 33078, 3244 ins, 8499 del, 11738 sub ] exp/tri4/decode_pts_cv_merge_bgpr_re/cer_14_0.5
+%WER 72.24 [ 23894 / 33078, 3152 ins, 8268 del, 12474 sub ] exp/tri4/decode_pts_cv_merge_bgpr_re.si/cer_13_1.0
+%WER 73.46 [ 24299 / 33078, 2927 ins, 8506 del, 12866 sub ] exp/tri4/decode_pts_cv_merge_bgpr.si/cer_14_1.0
+%WER 71.74 [ 23731 / 33078, 3462 ins, 7753 del, 12516 sub ] exp/tri4/decode_pts_cv_merge_tgpr/cer_12_1.0
+%WER 70.61 [ 23358 / 33078, 3644 ins, 7531 del, 12183 sub ] exp/tri4/decode_pts_cv_merge_tgpr_re/cer_13_0.0
+%WER 72.09 [ 23846 / 33078, 3172 ins, 8113 del, 12561 sub ] exp/tri4/decode_pts_cv_merge_tgpr_re.si/cer_13_1.0
+%WER 73.41 [ 24283 / 33078, 3033 ins, 8348 del, 12902 sub ] exp/tri4/decode_pts_cv_merge_tgpr.si/cer_14_1.0
+
+# for x in exp/chain*/*/decode*; do [ -d $x ] && [[ $x =~ "$1" ]] && grep WER $x/cer_* | utils/best_wer.sh; done
+%WER 20.61 [ 5622 / 27280, 169 ins, 378 del, 5075 sub ] exp/chain/cnn_1a_sp/decode_bgpr_pilot_test/cer_8_1.0
+%WER 43.98 [ 14549 / 33078, 2958 ins, 5073 del, 6518 sub ] exp/chain/cnn_1a_sp/decode_bgpr_pts_cv/cer_9_0.5
+%WER 19.49 [ 5316 / 27280, 163 ins, 328 del, 4825 sub ] exp/chain/cnn_1a_sp/decode_tgpr_pilot_test/cer_8_0.5
+%WER 43.39 [ 14351 / 33078, 2894 ins, 5064 del, 6393 sub ] exp/chain/cnn_1a_sp/decode_tgpr_pts_cv/cer_10_0.0
