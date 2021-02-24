@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+export LC_ALL="C.UTF-8"
+sed '
+s:\[SIL\]::g
+s:\[SPN\]::g
+s:[—―………⋯──、。〈〉《》「」『』﹖！（），－／：；？～｢｣]::g
+s:--::g
+s:-: :g
+'
